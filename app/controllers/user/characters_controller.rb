@@ -39,7 +39,7 @@ class User::CharactersController < User::UsersController
 
   def destroy
     @character.destroy
-    render json:{ success: I18n.t('global.successfully_deleted') }
+    render json: {success: I18n.t('global.successfully_deleted')}
   end
 
   private
